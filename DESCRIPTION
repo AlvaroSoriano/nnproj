@@ -1,0 +1,18 @@
+Package: nnproj
+Title: Data Projection by means of Neural Networks Hidden Layers
+Version: 0.0.0.9000
+Date: 2016-07-01
+Authors@R: c(person("Ricardo", "Aler", email = "ricardo.aler@uc3m.es", role = c("aut", "cre")),
+              person("Jose", "Valls", email = "jvalls@inf.uc3m.es", role = c("aut"))),
+			  person("Alvaro", "Soriano", email = "100315543@alumnos.uc3m.es", role = c("aut"))
+Description: This package uses the activations of the neurons of the hidden
+    layer in order to transform datasets in a supervised way.
+Maintainer: Alvaro Soriano <100315543@alumnos.uc3m.es>
+Depends:
+    R (>= 3.2.4),
+    neuralnet,
+    pracma,
+    NeuralNetTools
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 5.0.1.9000
