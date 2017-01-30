@@ -20,6 +20,6 @@ This function transforms a dataset into the activations of the neurons of the hi
 }
 \examples{
 data <- data.frame(A=runif(10, 5.0, 7.5), B=runif(10, 1.0, 3.5), C=runif(10, 10.0, 10.5), output=runif(10,1.0, 10.0))
-projection <- nnp(data[-ncol(data)], datos[[ncol(data)]], hidden=2, rep=10)
+projection <- nnp2(data[-ncol(data)], data[[ncol(data)]], hidden=2, rep=10)
 }
 

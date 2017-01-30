@@ -19,6 +19,7 @@ nnp(x, y, hidden, steps)
 This function transforms a dataset into the activations of the neurons of the hidden layer of a neural network. This is done by training a neural network and then computing the activations of the neural network for each input pattern
 }
 \examples{
-nnp_example()
+data <- data.frame(A=runif(10, 5.0, 7.5), B=runif(10, 1.0, 3.5), C=runif(10, 10.0, 10.5), output=runif(10,1.0, 10.0))
+projection <- nnp(data[-ncol(data)], data[[ncol(data)]], hidden=2, rep=10)
 }
 
