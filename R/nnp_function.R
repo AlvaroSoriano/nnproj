@@ -2,7 +2,6 @@ library(NeuralNetTools)
 library(neuralnet)
 library(pracma)
 library(nnet)
-library(class)
 
 #' A supervised projection function
 #'
@@ -14,7 +13,7 @@ library(class)
 #' @export
 #' @examples
 #' data <- data.frame(A=runif(10, 5.0, 7.5), B=runif(10, 1.0, 3.5), C=runif(10, 10.0, 10.5), output=runif(10,1.0, 10.0))
-#' projection <- nnp2(data[-ncol(data)], data[[ncol(data)]], hidden=2, rep=10)
+#' projection <- nnp2(data[-ncol(data)], data[[ncol(data)]], hidden=2, steps=10)
 
 
 nnp2 <- function(x, y, hidden, steps){
@@ -46,7 +45,7 @@ nnp2 <- function(x, y, hidden, steps){
 #' @export
 #' @examples
 #' data <- data.frame(A=runif(10, 5.0, 7.5), B=runif(10, 1.0, 3.5), C=runif(10, 10.0, 10.5), output=runif(10,1.0, 10.0))
-#' projection <- nnp(data[-ncol(data)], data[[ncol(data)]], hidden=2, rep=10)
+#' projection <- nnp(data[-ncol(data)], data[[ncol(data)]], hidden=2, steps=10)
 
 nnp <- function(x, y, hidden, steps){
   

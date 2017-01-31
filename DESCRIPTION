@@ -10,7 +10,8 @@ Depends:
     R (>= 3.2.4),
     neuralnet,
     pracma,
-    NeuralNetTools
+    NeuralNetTools,
+    nnet
 License: GPL (>= 2)
 LazyData: true
 RoxygenNote: 5.0.1
